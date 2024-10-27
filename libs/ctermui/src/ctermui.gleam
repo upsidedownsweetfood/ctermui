@@ -1,3 +1,4 @@
+import ctermlib
 import gleam/io
 import gleam/list
 import gleam/string
@@ -32,4 +33,6 @@ pub fn table(fields: List(String)) -> String {
     Ok(x) -> x
     Error(_) -> panic
   }
+
+  ctermlib.ciao()
 }
